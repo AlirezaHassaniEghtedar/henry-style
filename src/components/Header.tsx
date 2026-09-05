@@ -46,7 +46,7 @@ export default function Header() {
                 className="size-9 rounded-lg flex items-center justify-center font-black text-white text-xs tracking-tight"
                 style={{ background: "#14C46B" }}
               >
-                <img src="../public/images/logo.svg" alt="logo" />
+                <img src="/images/logo.svg" alt="logo" />
               </div>
               <span
                 className="font-black text-lg hidden sm:block"

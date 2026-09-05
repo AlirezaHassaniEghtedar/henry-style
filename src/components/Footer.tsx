@@ -26,7 +26,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm"
                 style={{ background: "#14C46B" }}
               >
-                <img src="../public/images/logo.svg" alt="" />
+                <img src="/images/logo.svg" alt="" />
               </div>
               <span className="font-black text-xl" style={{ fontWeight: 900 }}>
                 Henry Style
