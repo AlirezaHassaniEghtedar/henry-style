@@ -26,7 +26,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm"
                 style={{ background: "#14C46B" }}
               >
-                HS
+                <img src="../public/images/logo.svg" alt="" />
               </div>
               <span className="font-black text-xl" style={{ fontWeight: 900 }}>
                 Henry Style
@@ -42,7 +42,7 @@ export default function Footer() {
             {/* Social */}
             <div className="flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/henry_style"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-110"

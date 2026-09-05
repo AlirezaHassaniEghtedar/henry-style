@@ -40,13 +40,13 @@ export default function Header() {
             {/* Logo */}
             <button
               onClick={() => navigate("home")}
-              className="flex items-center gap-2.5 group"
+              className="flex items-end gap-2.5 group cursor-pointer"
             >
               <div
-                className="w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-xs tracking-tight"
+                className="size-9 rounded-lg flex items-center justify-center font-black text-white text-xs tracking-tight"
                 style={{ background: "#14C46B" }}
               >
-                HS
+                <img src="../public/images/logo.svg" alt="logo" />
               </div>
               <span
                 className="font-black text-lg hidden sm:block"
@@ -67,7 +67,7 @@ export default function Header() {
                 <button
                   key={item.label}
                   onClick={() => navigate(item.page)}
-                  className="text-sm font-medium transition-colors duration-200 hover:text-green-500"
+                  className="text-sm font-medium transition-colors duration-200 hover:text-green-500 cursor-pointer"
                   style={{
                     color:
                       !scrolled && isHomePage
@@ -85,7 +85,7 @@ export default function Header() {
             <div className="flex items-center gap-1">
               {/* Search icon */}
               <button
-                className="p-2 rounded-lg transition-colors duration-200"
+                className="p-2 rounded-lg transition-colors duration-200 cursor-pointer"
                 style={{
                   color:
                     !scrolled && isHomePage
@@ -111,7 +111,7 @@ export default function Header() {
               {/* Dark mode */}
               <button
                 onClick={toggleDark}
-                className="p-2 rounded-lg transition-colors duration-200"
+                className="p-2 rounded-lg transition-colors duration-200 cursor-pointer"
                 style={{
                   color:
                     !scrolled && isHomePage
@@ -154,7 +154,7 @@ export default function Header() {
               {/* Cart */}
               <button
                 onClick={openCart}
-                className="relative p-2 rounded-lg transition-colors duration-200"
+                className="relative p-2 rounded-lg transition-colors duration-200 cursor-pointer"
                 style={{
                   color:
                     !scrolled && isHomePage
@@ -188,7 +188,7 @@ export default function Header() {
               {/* Login button - desktop */}
               <button
                 onClick={() => navigate("login")}
-                className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold text-white mr-1 transition-all duration-200 hover:scale-105"
+                className="hidden sm:flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold text-white mr-1 transition-all duration-200 hover:scale-105 cursor-pointer"
                 style={{
                   background: "#14C46B",
                   fontWeight: 700,

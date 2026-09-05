@@ -14,7 +14,7 @@ function useScrollReveal() {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
     );
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
     return () => observer.disconnect();
@@ -25,7 +25,9 @@ export default function HomePage() {
   const { navigate } = useApp();
   useScrollReveal();
 
-  const newArrivals = products.filter((p) => p.badge === "new" || p.badge === "bestseller");
+  const newArrivals = products.filter(
+    (p) => p.badge === "new" || p.badge === "bestseller",
+  );
   const allProducts = products.slice(0, 8);
 
   return (
@@ -100,8 +102,8 @@ export default function HomePage() {
               lineHeight: "1.8",
             }}
           >
-            طرح‌های گرافیکی اختصاصی با هویت ایرانی — نوستالژی سینما، موسیقی،
-            و فرهنگ رترو روی تی‌شرت پرمیوم.
+            طرح‌های گرافیکی اختصاصی با هویت ایرانی — نوستالژی سینما، موسیقی، و
+            فرهنگ رترو روی تی‌شرت پرمیوم.
           </p>
 
           <div className="animate-fade-in delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -183,9 +185,9 @@ export default function HomePage() {
       {/* ═══════════════════════════════════════
           TRUST BAR
       ═══════════════════════════════════════ */}
-      <div style={{ background: "#14C46B" }}>
+      <div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-12 py-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 py-5">
             {[
               { icon: "🚚", text: "ارسال به سراسر ایران" },
               { icon: "⭐", text: "فروش تک و عمده" },
@@ -194,8 +196,8 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.text}
-                className="flex items-center gap-2 text-white text-sm font-bold"
-                style={{ fontWeight: 700 }}
+                className="flex items-center justify-center gap-2 text-white text-sm font-bold px-3 py-5 rounded"
+                style={{ fontWeight: 700, background: "#14C46B" }}
               >
                 <span>{item.icon}</span>
                 <span>{item.text}</span>
@@ -235,11 +237,11 @@ export default function HomePage() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {allProducts.slice(0, 4).map((product, i) => (
-            <div
-              key={product.id}
-              className={`reveal delay-${(i + 1) * 100}`}
-            >
-              <ProductCard product={product} featured={product.badge === "bestseller"} />
+            <div key={product.id} className={`reveal delay-${(i + 1) * 100}`}>
+              <ProductCard
+                product={product}
+                featured={product.badge === "bestseller"}
+              />
             </div>
           ))}
         </div>
@@ -291,11 +293,7 @@ export default function HomePage() {
                   }}
                 />
                 <div className="absolute bottom-0 right-0 left-0 p-5 text-right">
-                  <p
-                    className="text-2xl mb-1"
-                  >
-                    {cat.emoji}
-                  </p>
+                  <p className="text-2xl mb-1">{cat.emoji}</p>
                   <p
                     className="font-black text-white text-base"
                     style={{ fontWeight: 900 }}
@@ -341,7 +339,7 @@ export default function HomePage() {
             {allProducts.slice(4).map((product, i) => (
               <div
                 key={product.id}
-                className={`reveal delay-${(i % 4 + 1) * 100}`}
+                className={`reveal delay-${((i % 4) + 1) * 100}`}
               >
                 <ProductCard product={product} />
               </div>
@@ -432,9 +430,7 @@ export default function HomePage() {
                 >
                   طرح خودت رو
                   <br />
-                  <span style={{ color: "#14C46B" }}>
-                    روی تی‌شرت پیاده کن
-                  </span>
+                  <span style={{ color: "#14C46B" }}>روی تی‌شرت پیاده کن</span>
                 </h2>
                 <p
                   className="text-sm sm:text-base mb-8 max-w-md mx-auto lg:mx-0"
@@ -598,8 +594,7 @@ export default function HomePage() {
                 lineHeight: "1.1",
               }}
             >
-              خاص باش،{" "}
-              <span style={{ color: "#14C46B" }}>معمولی نباش</span>
+              خاص باش، <span style={{ color: "#14C46B" }}>معمولی نباش</span>
             </h2>
             <p
               className="text-base sm:text-lg mb-8"

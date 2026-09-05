@@ -142,7 +142,7 @@ export default function ContactPage() {
                       </svg>
                     ),
                     label: "اینستاگرام",
-                    value: "@henrystyle.ir",
+                    value: "@henry_style",
                     sub: "جواب DM رو سریع می‌دیم",
                   },
                   {
