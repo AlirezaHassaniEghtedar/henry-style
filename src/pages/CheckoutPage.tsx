@@ -236,7 +236,7 @@ export default function CheckoutPage() {
                           value={opt.id}
                           checked={form.shipping === opt.id}
                           onChange={() => update("shipping", opt.id)}
-                          className="sr-only"
+                          className="hidden"
                         />
                         <div
                           className="w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0"
@@ -286,7 +286,7 @@ export default function CheckoutPage() {
                           background: form.payment === opt.id ? "rgba(20,196,107,0.05)" : "transparent",
                         }}
                       >
-                        <input type="radio" name="payment" value={opt.id} checked={form.payment === opt.id} onChange={() => update("payment", opt.id)} className="sr-only" />
+                        <input type="radio" name="payment" value={opt.id} checked={form.payment === opt.id} onChange={() => update("payment", opt.id)} className="hidden" />
                         <div className="w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0" style={{ borderColor: form.payment === opt.id ? "#14C46B" : "var(--border)" }}>
                           {form.payment === opt.id && <div className="w-2.5 h-2.5 rounded-full" style={{ background: "#14C46B" }} />}
                         </div>
