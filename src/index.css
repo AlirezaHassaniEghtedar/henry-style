@@ -56,11 +56,6 @@ html.dark {
 }
 
 html,
-body {
-  overflow-x: hidden;
-}
-
-html,
 body,
 #root {
   height: 100%;
