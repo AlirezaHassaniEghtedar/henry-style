@@ -108,7 +108,7 @@ export default function CartDrawer() {
                   className="font-bold mb-2"
                   style={{ color: "var(--text-primary)", fontWeight: 700 }}
                 >
-                  سبد خرید خالی‌ه
+                  سبد خرید خالیه
                 </p>
                 <p className="text-sm" style={{ color: "var(--text-muted)" }}>
                   هنوز محصولی اضافه نکردی
