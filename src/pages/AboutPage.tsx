@@ -140,19 +140,19 @@ export default function AboutPage() {
             <div className="order-1 lg:order-2">
               <div
                 className="relative rounded-2xl overflow-hidden"
-                style={{ aspectRatio: "4/5", background: "var(--border)" }}
+                style={{ aspectRatio: "4/5", background: "white" }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1556821840-3a63f8a79c65?w=700&h=900&fit=crop&auto=format"
+                  src="/images/henry_style.webp"
                   alt="تیم Henry Style"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover pb-15 bg-transparent"
                 />
                 <div
                   className="absolute bottom-6 right-6 left-6 p-5 rounded-xl"
                   style={{
-                    background: "rgba(13,26,17,0.9)",
+                    background: "rgba(13,26,17,0.5)",
                     backdropFilter: "blur(12px)",
-                    border: "1px solid rgba(20,196,107,0.2)",
+                    border: "1px solid rgba(20,196,107,0.1)",
                   }}
                 >
                   <p className="font-bold text-sm text-white mb-1" style={{ fontWeight: 700 }}>
