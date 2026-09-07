@@ -75,7 +75,7 @@ export default function HomePage() {
               className="badge badge-new inline-flex mb-6"
               style={{ fontSize: "12px" }}
             >
-              🔥 دراپ جدید بهار ۱۴۰۳
+              🔥 دراپ جدید پاییز ۱۴۰۶
             </span>
           </div>
 
