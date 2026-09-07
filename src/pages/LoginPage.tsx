@@ -35,7 +35,7 @@ export default function LoginPage() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(20,196,107,0.15), transparent)" }} />
         <div className="relative z-10 text-center px-12">
           <div className="w-16 h-16 rounded-2xl flex items-center justify-center font-black text-white text-xl mx-auto mb-6" style={{ background: "#14C46B" }}>
-            HS
+            <img src="/images/logo.svg" alt="logo" />
           </div>
           <h2 className="font-black text-4xl text-white mb-4" style={{ fontWeight: 900 }}>
             خوش برگشتی!
@@ -51,7 +51,7 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="flex items-center gap-3 mb-8 lg:hidden">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm" style={{ background: "#14C46B" }}>HS</div>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm" style={{ background: "#14C46B" }}><img src="/images/logo.svg" alt="logo" /></div>
             <span className="font-black text-xl" style={{ color: "var(--text-primary)", fontWeight: 900 }}>Henry Style</span>
           </div>
 

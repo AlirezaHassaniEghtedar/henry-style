@@ -28,14 +28,14 @@ export default function SignupPage() {
       {/* Left decorative */}
       <div className="hidden lg:flex flex-1 flex-col items-center justify-center relative overflow-hidden" style={{ background: "#0d1a11" }}>
         <img
-          src="https://images.unsplash.com/photo-1556821840-3a63f8a79c65?w=800&h=1000&fit=crop&auto=format"
+          src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=1000&fit=crop&auto=format"
           alt=""
           className="absolute inset-0 w-full h-full object-cover opacity-25"
         />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(232,93,61,0.1), rgba(20,196,107,0.15))" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(20,196,107,0.15), transparent)" }} />
         <div className="relative z-10 text-center px-12">
           <div className="w-16 h-16 rounded-2xl flex items-center justify-center font-black text-white text-xl mx-auto mb-6" style={{ background: "#14C46B" }}>
-            HS
+            <img src="/images/logo.svg" alt="logo" />
           </div>
           <h2 className="font-black text-4xl text-white mb-4" style={{ fontWeight: 900 }}>
             بپیوند به ما
@@ -67,8 +67,8 @@ export default function SignupPage() {
       <div className="flex-1 flex items-center justify-center px-4 sm:px-8 py-12">
         <div className="w-full max-w-md">
           {/* Mobile logo */}
-          <div className="flex items-center gap-3 mb-8 lg:hidden">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm" style={{ background: "#14C46B" }}>HS</div>
+          <div className="flex items-center gap-3 mb-8 lg:hidden ">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center font-black text-white text-sm" style={{ background: "#14C46B" }}><img src="/images/logo.svg" alt="logo" /></div>
             <span className="font-black text-xl" style={{ color: "var(--text-primary)", fontWeight: 900 }}>Henry Style</span>
           </div>
 
