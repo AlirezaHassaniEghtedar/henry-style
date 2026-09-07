@@ -237,10 +237,10 @@ export default function CartDrawer() {
                       removeFromCart(item.product.id, item.size, item.color)
                     }
                     className="self-start p-1 rounded-lg transition-colors hover:text-accent-500"
-                    style={{ color: "var(--text-muted)" }}
+                    style={{ color: "red" }}
                   >
                     <svg
-                      className="w-4 h-4"
+                      className="size-5"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
