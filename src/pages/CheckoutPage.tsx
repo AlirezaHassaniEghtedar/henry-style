@@ -502,7 +502,7 @@ export default function CheckoutPage() {
                         border: "var(--special-border)",
                       }}
                     >
-                      پرداخت و ثبت سفارش ←
+                      پرداخت
                     </button>
                   </div>
                 </div>
