@@ -258,10 +258,10 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className="flex gap-3 mt-6">
-                    <button onClick={() => setStep("info")} className="btn-secondary flex-1 py-4 font-bold" style={{ fontWeight: 700 }}>
+                    <button onClick={() => setStep("info")} className="btn-secondary min-w-0 flex-1 py-4 font-bold" style={{ fontWeight: 700 }}>
                       ← برگشت
                     </button>
-                    <button onClick={() => setStep("payment")} className="btn-primary flex-1 py-4 font-black" style={{ fontWeight: 900, borderRadius: "12px" }}>
+                    <button onClick={() => setStep("payment")} className="btn-primary flex-1 min-w-0 py-4 font-black" style={{ fontWeight: 900, borderRadius: "12px" }}>
                       ادامه — پرداخت ←
                     </button>
                   </div>
@@ -297,12 +297,12 @@ export default function CheckoutPage() {
                   </div>
 
                   <div className="flex gap-3">
-                    <button onClick={() => setStep("shipping")} className="btn-secondary flex-1 py-4 font-bold" style={{ fontWeight: 700 }}>
+                    <button onClick={() => setStep("shipping")} className="btn-secondary flex-1 min-w-0 py-4 font-bold" style={{ fontWeight: 700 }}>
                       ← برگشت
                     </button>
                     <button
                       onClick={() => setStep("done")}
-                      className="btn-primary flex-1 py-4 font-black"
+                      className="btn-primary flex-1 min-w-0 py-4 font-black"
                       style={{ fontWeight: 900, borderRadius: "12px", border: "var(--special-border)" }}
                     >
                       پرداخت و ثبت سفارش ←
