@@ -145,7 +145,7 @@ export default function AboutPage() {
                 <img
                   src="/images/henry_style.webp"
                   alt="تیم Henry Style"
-                  className="w-full h-full object-cover pb-15 bg-transparent"
+                  className="w-full h-full object-cover pb-20 bg-transparent"
                 />
                 <div
                   className="absolute bottom-6 right-6 left-6 p-5 rounded-xl"
